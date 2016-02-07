@@ -8,4 +8,4 @@ GPIO.setup(13, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 GPIO.wait_for_edge(13, GPIO.RISING)
 print("Shutting down, NOW!")
-os.system("poweroff")
+os.system("shutdown -h now")
